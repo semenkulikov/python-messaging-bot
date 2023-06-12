@@ -1,5 +1,12 @@
+import logging
+
 from telethon import events
-from loader import client, logger
+from loader import client
+
+
+logging.basicConfig()
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
 
 
 async def initial_sender(username_list: list, message: str):

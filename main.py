@@ -1,7 +1,13 @@
+import logging
+
 from loader import client
 import handlers  # noqa
 from database.commands import create_tables
-from loader import logger
+
+
+logging.basicConfig()
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
 
 
 def main():
@@ -14,6 +20,7 @@ def main():
 
 if __name__ == '__main__':
     try:
+        raise ValueError
         main()
     except Exception as e:
         logger.exception("Unknown error")

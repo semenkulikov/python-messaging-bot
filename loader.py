@@ -1,8 +1,6 @@
 from telethon.sync import TelegramClient
 from config_data import config
-import logging
 
-logging.basicConfig()
 
 client = TelegramClient(
     session='my_session',
@@ -14,9 +12,6 @@ client = TelegramClient(
     lang_code="en",
     system_lang_code="en-US"
 )
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
 
 # Пути решения вылета всех сессий:
 
