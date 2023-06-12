@@ -2,5 +2,5 @@
 /.idea
 /venv
 /*.session
-__pychache__/
 /database/*.db
+__pycache__/
