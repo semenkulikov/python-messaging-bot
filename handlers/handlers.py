@@ -1,5 +1,5 @@
 from telethon import events
-from loader import client
+from loader import client, logger
 
 
 async def initial_sender(username_list: list, message: str):
@@ -15,3 +15,4 @@ async def initial_sender(username_list: list, message: str):
             message=message,
             schedule=10
         )
+        logger.debug(f"Message sent to {username}")
