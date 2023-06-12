@@ -1,5 +1,15 @@
 from telethon.sync import TelegramClient
 from config_data import config
+import logging
+
+
+logging.basicConfig(
+    level=logging.INFO,
+    filename='my_logging.log',
+    format='%(levelname)s (%(asctime)s): %(message)s (Line: %(lineno)d) [%(filename)s]',
+    datefmt='%d/%m/%Y %I:%M:%S',
+    encoding='utf-8',
+)
 
 
 client = TelegramClient(

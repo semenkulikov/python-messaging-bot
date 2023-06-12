@@ -4,3 +4,4 @@
 /*.session
 /database/*.db
 __pycache__/
+my_logging.log

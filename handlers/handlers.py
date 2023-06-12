@@ -4,11 +4,6 @@ from telethon import events
 from loader import client
 
 
-logging.basicConfig()
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-
-
 async def initial_sender(username_list: list, message: str):
     """
     Функция для рассылки сообщения группе юзеров
@@ -22,4 +17,4 @@ async def initial_sender(username_list: list, message: str):
             message=message,
             schedule=10
         )
-        logger.debug(f"Message sent to {username}")
+        logging.info(f"Message sent to {username}")
