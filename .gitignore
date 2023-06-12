@@ -3,3 +3,4 @@
 /venv
 /*.session
 /__pychache__
+/database/*.db
